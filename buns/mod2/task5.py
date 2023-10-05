@@ -1,0 +1,5 @@
+string = input("Введите через запятую один символ латинского алфавита и целое число")
+comma = string.find(",")
+i = str(string[:comma])
+n = int(string[comma+1:])
+print(chr(((ord(i) - 97) + n) % 26 + 97))

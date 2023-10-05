@@ -1,0 +1,5 @@
+numbers = input("Введите два целых числа через запятую")
+comma = numbers.find(", ")
+first_number = int(numbers[:comma])
+second_number = int(numbers[comma+1:])
+print(first_number % second_number)
